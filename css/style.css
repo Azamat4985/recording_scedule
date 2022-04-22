@@ -1,0 +1,169 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  font-size: 18px;
+}
+
+.wrapper {
+  width: fit-content;
+  min-height: 400px;
+  background: rgb(16, 17, 41);
+  border-radius: 10px;
+  padding: 50px 50px;
+  position: relative;
+}
+
+.inputLabel {
+  color: rgb(232, 233, 255);
+}
+
+.times {
+  position: relative;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.timeLabel {
+  color: rgb(232, 233, 255);
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  min-width: 200px;
+}
+
+.hourText {
+  padding: 7px;
+  border-radius: 3px;
+  background-color: rgb(232, 233, 255);
+  color: #000;
+  margin-right: 10px;
+  font-size: 0.9em;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  margin-bottom: 0;
+}
+
+.hourText:hover {
+  cursor: pointer;
+  /* background-color: rgb(81, 122, 255); */
+  /* color: #fff; */
+}
+
+.hourText--active {
+  background-color: rgb(223, 143, 23);
+  color: #fff;
+}
+
+.hourText--mouseover {
+  background-color: rgb(81, 122, 255);
+  color: #fff;
+}
+
+.hourLine {
+  margin-bottom: 21px;
+}
+
+.selectAllText {
+  color: rgb(232, 233, 255);
+  cursor: pointer;
+}
+
+.closeBtn {
+  position: absolute;
+  color: #fff;
+  font-size: 1em;
+  padding: 5px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: blue;
+  top: 10px;
+  right: 10px;
+}
+
+#openModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1400px) {
+  body {
+    font-size: 16px;
+  }
+  .labelBox {
+    flex-direction: column !important;
+  }
+  .timeLabel {
+    margin-bottom: 5px;
+    min-width: 150px;
+    font-size: 1.7em;
+  }
+  .timeLabel:hover {
+    color: rgb(223, 143, 23);
+  }
+  .clearBtn {
+    display: none;
+  }
+  .hourLine {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .hourLine {
+    flex-wrap: wrap;
+    margin-top: 50px;
+    z-index: 999;
+  }
+  .hourText {
+    margin-bottom: 10px;
+  }
+  .col_left {
+    position: absolute;
+  }
+  .labelBox {
+    margin-bottom: 105px;
+  }
+  .inputLabel {
+    width: fit-content;
+  }
+  .wrapper {
+    width: 580px;
+  }
+}
+
+@media (max-width: 740px) {
+  body {
+    font-size: 14px;
+    padding: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .labelBox {
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .labelBox {
+    margin-bottom: 192px;
+  }
+  .submitBox{
+    justify-content: center!important;
+  }
+}
+@media (max-width: 385px) {
+  .labelBox {
+    margin-bottom: 235px;
+  }
+}
